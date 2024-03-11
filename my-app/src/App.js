@@ -3,14 +3,6 @@ import './App.css';
 import MovingHeader from './components/MovingHeader.js';
 // import AnimationChain from './components/MovingHeaderChain.js';
 
-// move this to components later
-// function MyButton() {
-//   return (
-//     <button>
-//       I'm a button
-//     </button>
-//   );
-// }
 
 function App() {
   return (
