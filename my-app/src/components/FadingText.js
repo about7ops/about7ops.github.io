@@ -2,15 +2,14 @@ import React from 'react';
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
+import img from "../images/test_prof_image.jpg";
 
-// text should be one col, image should be other
-
-const data = ["Test 1", "Test 2", "Buttons"]
+// revisit mobile sizing
 
 const FadingText = () => {
   return (
     <div>
-      <Container>
+      <Container expand="lg">
         <Row>
           <Col>
             <h1>Lorem Ipsum Lorem Ipsum Lorem...</h1>
@@ -19,7 +18,7 @@ const FadingText = () => {
             <h3>Button1 and Button 2</h3>
           </Col>
           <Col>
-          <h4>AN IMAGE WILL GO HERE</h4>
+          <img src={img} alt="profile picture" />
           </Col>
         </Row>
     </Container>

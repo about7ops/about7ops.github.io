@@ -19,3 +19,9 @@ div {
     }
 
 }
+
+@media (max-width: 320px) {
+    .element {
+          width: 90%;   
+         }
+    }  
