@@ -1,4 +1,21 @@
-div {
-    color: white;
-}
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0;  } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
+div {
+    h1 {
+        color: white;
+        opacity: 0;
+        animation: fadeIn ease 4s; 
+        animation-fill-mode: forwards;
+    }
+
+    p {
+        color: white;
+        opacity: 0;
+        animation: fadeIn ease 4s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+
+}
