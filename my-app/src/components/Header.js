@@ -6,7 +6,6 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 function Header() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="light">
-      <Container>
         <Navbar.Brand href="#home" className='justify-content-start'>React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
@@ -26,7 +25,6 @@ function Header() {
             </NavDropdown>
          {/* </Nav> */}
         </Navbar.Collapse>
-      </Container>
     </Navbar>
   );
 }
