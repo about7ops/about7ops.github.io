@@ -6,9 +6,20 @@
 @-moz-keyframes fadeUp { from { transform: translate(0%,50%); } to { transform: translate(0%,0%) } }
 @keyframes fadeUp { from { transform: translate(0%,50%); } to { transform: translate(0%,0%) } }
 
-.text {
+.intro {
 
     padding-top: 20%;
+    /* revisit this padding */
+    overflow-y: hidden;
+
+    img {
+        width: 100%;
+        opacity: 0;
+        animation: fadeUp, fadeIn;
+        animation-duration: 1s, 2s; 
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
 
     h1 {
         color: black;

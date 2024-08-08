@@ -1,32 +1,21 @@
-import TextTheme from './styles/FadingText.css';
 import AppTheme from './App.css';
-import CardsTheme from './styles/Cards.css'
+import IntroTheme from './styles/Intro.css';
 
 // components
-import FadingText from './components/FadingText.js';
-import Header from './components/Header.js';
-import ProfilePicture from './components/Cards.js';
+import Intro from './components/Intro.js';
 
-import Container from 'react-bootstrap/esm/Container.js';
-import Col from 'react-bootstrap/esm/Col';
-import Row from 'react-bootstrap/esm/Row';
+import {Container, Col, Row} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className = "app" theme={AppTheme}>
-      <Container>
-          <div className = "header">
-          <Header />
-          </div>
-          <Row xs={2}>
-          <Col>
-          <div className = "text" theme={TextTheme}>
-          <FadingText /></div></Col>
-          <Col>
-          <div className = "cards" theme={CardsTheme}>
-          <ProfilePicture /></div></Col>
-          </Row>
-      </Container>
+      {/* removed header/navbar to focus on first elements on page */}
+      <div className = "intro" theme={IntroTheme}>
+        <Container>
+          <Intro />
+        </Container>
+      </div>
     </div>
   );
 }
