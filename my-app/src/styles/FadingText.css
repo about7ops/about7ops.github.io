@@ -6,8 +6,9 @@
 @-moz-keyframes fadeUp { from { transform: translate(0%,50%); } to { transform: translate(0%,0%) } }
 @keyframes fadeUp { from { transform: translate(0%,50%); } to { transform: translate(0%,0%) } }
 
-div {
+.text {
 
+    padding-top: 20%;
 
     h1 {
         color: black;
@@ -25,9 +26,7 @@ div {
         animation-delay: 1s;
         animation-fill-mode: forwards;
     }
-
 }
-
 /* @media (max-width: 320px) {
     .element {
           width: 90%;   
