@@ -6,13 +6,20 @@
 @-moz-keyframes fadeUp { from { transform: translate(0%,50%); } to { transform: translate(0%,0%) } }
 @keyframes fadeUp { from { transform: translate(0%,50%); } to { transform: translate(0%,0%) } }
 
+@media only screen and (max-width: 960px) {
+    .intro {
+      max-width: 100%;
+    }
+  }
+
 .intro {
 
-    padding-top: 20%;
+    background-color: grey;
+
     /* revisit this padding */
     overflow-y: hidden;
 
-    img {
+    img, .introButtons {
         width: 100%;
         opacity: 0;
         animation: fadeUp, fadeIn;
@@ -38,8 +45,3 @@
         animation-fill-mode: forwards;
     }
 }
-/* @media (max-width: 320px) {
-    .element {
-          width: 90%;   
-         }
-} */
