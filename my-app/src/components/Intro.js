@@ -2,13 +2,13 @@ import React from 'react';
 import profPic from '../images/profPic.jpg';
 import {Container, Col, Row} from 'react-bootstrap';
 import IntroButtons from './button';
+import '../styles/Intro.css';
 
 
 // revisit mobile sizing
 
 const Intro = () => {
   return (
-    <div id="intro">
       <Row>
         <Col>
           <h1>Lorem Ipsum Lorem Ipsum Lorem...</h1>
@@ -20,7 +20,6 @@ const Intro = () => {
           <img src={profPic} alt="profile"></img>
           </Col>
         </Row>
-    </div>
   );
 };
 
